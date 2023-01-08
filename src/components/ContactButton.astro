@@ -1,0 +1,10 @@
+---
+const { className = "" } = Astro.props;
+---
+
+<a
+  class={`inline-block text-neutral-800 bg-gradient-to-r from-emerald-400 to-cyan-400 py-2 px-5 rounded-md ${className} hover:scale-105 hover:-rotate-1 ease-in duration-300`}
+  href="/contact"
+>
+  <slot />
+</a>

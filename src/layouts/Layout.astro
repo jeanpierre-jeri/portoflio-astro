@@ -1,0 +1,28 @@
+---
+import Header from "../components/Header.astro";
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Jean Pierre Jeri - Frontend Developer, I work with React, Next, Astro, Typescript, Vue, Svelte, Node, Express"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="bg-slate-900 text-sky-200 min-h-screen">
+      <main class="container mx-auto lg:max-w-5xl leading-normal px-4 md:px-0">
+        <Header />
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>

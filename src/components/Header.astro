@@ -1,0 +1,34 @@
+---
+import ContactButton from "./ContactButton.astro";
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname; // remove the first "/"
+const afterStyle =
+  "hover:after:opacity-100 after:ease-in after:duration-300 after:mt-0.5 after:opacity-0 after:block after:w-10/12 after:mx-auto after:h-2 after:rounded-full after:bg-gradient-to-r after:from-emerald-400 after:to-cyan-400";
+---
+
+<header>
+  <nav>
+    <ul class="flex text-base pt-10 pb-6 items-end gap-8 md:gap-20">
+      <li>
+        <a
+          href="/"
+          class={`text- ${afterStyle} ${
+            currentPath === "/" ? "after:opacity-100" : ""
+          }`}>Home</a
+        >
+      </li>
+      <li class="flex-1 text-right">
+        <a
+          class={`inline-block ${afterStyle} ${
+            currentPath === "/projects" ? "after:opacity-100" : ""
+          }`}
+          href="/projects">Projects</a
+        >
+      </li>
+      <li>
+        <ContactButton>Contact</ContactButton>
+      </li>
+    </ul>
+  </nav>
+</header>

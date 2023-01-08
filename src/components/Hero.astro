@@ -1,0 +1,36 @@
+---
+import ContactButton from "./ContactButton.astro";
+---
+
+<section class="grid md:grid-cols-2 items-center gap-10 md:gap-20 mt-24">
+  <div>
+    <h1 class="leading-6 text-xl text-slate-200">
+      Frontend Developer
+      <span
+        class="leading-tight text-7xl font-semibold text-transparent block bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400"
+        >Jean Pierre</span
+      >
+    </h1>
+    <p class="mt-2 tracking-wider">
+      I love programming, web development, and to learn new technologies,
+      contact me if you want your idea come true.
+    </p>
+
+    <ContactButton className="mt-8">Contact me</ContactButton>
+  </div>
+  <div>
+    <picture class="flex p-9 max-w-lg mx-auto aspect-square">
+      <img
+        class="block overflow-hidden rounded-full"
+        src="/jeanpierre.webp"
+        alt="Picture of Jean Pierre"
+        width="640"
+        height="640"
+      />
+    </picture>
+  </div>
+
+  <a href="#about" class="mx-auto md:col-span-2 cursor-pointer">
+    <img class="block" src="/arrow.svg" alt="Arrow to Bottom" />
+  </a>
+</section>
