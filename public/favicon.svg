@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+  <g fill="#fff" clip-path="url(#a)">
+    <path
+      d="M4 20v2h4.586L2 28.586 3.414 30 10 23.414V28h2v-8H4ZM30 10l-6-6-1.414 1.414L27.172 10l-4.586 4.586L24 16l6-6ZM13.918 17.483 18.068 2 20 2.518 15.85 18l-1.932-.518ZM4 10l6-6 1.414 1.414L6.828 10l4.586 4.586L10 16l-6-6Z" />
+  </g>
   <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h32v32H0z" />
+    </clipPath>
   </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
 </svg>
