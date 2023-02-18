@@ -1,0 +1,43 @@
+---
+const { project } = Astro.props;
+const { name, image, technologies, description, link } = project;
+---
+
+<a
+  href={link}
+  target="_blank"
+  rel="noopener"
+  class="hover:scale-105 transition-transform duration-300"
+>
+  <article
+    class="bg-neutral-800 rounded-md overflow-hidden h-full flex flex-col"
+  >
+    <picture>
+      <img
+        src={image}
+        alt="Image Project 1"
+        class="w-full object-cover aspect-video"
+        loading="lazy"
+      />
+    </picture>
+    <div class="p-7 flex flex-col h-full gap-4">
+      <h3 class="font-semibold text-xl uppercase text-slate-200">{name}</h3>
+      <ul class="flex flex-wrap gap-3 items-start">
+        {
+          technologies.map((technology) => {
+            return (
+              <li class="px-4 py-2 font-normal text-xs tracking-widest uppercase text-neutral-800 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-md">
+                {technology}
+              </li>
+            );
+          })
+        }
+      </ul>
+      <p
+        class="font-normal text-base leading-normal tracking-wider text-sky-200"
+      >
+        {description}
+      </p>
+    </div>
+  </article>
+</a>

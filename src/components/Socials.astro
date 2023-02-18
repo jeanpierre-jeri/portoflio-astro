@@ -1,0 +1,27 @@
+---
+import Github from "./Icons/Github.astro";
+import Gmail from "./Icons/Gmail.astro";
+import Linkedin from "./Icons/Linkedin.astro";
+
+---
+
+<ul class="flex justify-center gap-20 items-center">
+  <li>
+    <a href="mailto:jeanpierre.webdev@gmail.com" class="flex flex-col gap-3 items-center" >
+      <Gmail />
+      <p class="text-xs text-center uppercase">Gmail</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/jean-pierre-jeri-elias/" target="_blank" rel="noopener" class="flex flex-col gap-3 items-center">
+      <Linkedin />
+      <p class="uppercase text-xs text-center">Linkedin</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/jeanpierre-jeri" target="_blank" rel="noopener" class="flex flex-col gap-3 items-center">
+      <Github />
+      <p class="uppercase text-xs text-center">Github</p>
+    </a>
+  </li>
+</ul>
