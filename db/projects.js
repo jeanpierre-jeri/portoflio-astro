@@ -1,19 +1,19 @@
 export default [
   {
-    name: "Cafe Mana",
-    link: "https://cafemanarestaurant.us",
-    image: "/projects/cafemana.webp",
-    technologies: ["Javascript", "Vue", "Tailwind", "Nuxt JS"],
+    name: "Chat Group",
+    link: "https://chat-group-beta.vercel.app",
+    image: "/projects/chat-group.webp",
+    technologies: ["Next JS", "React", "Tailwind", "Supabase", "Typescript"],
     description:
-      "This website was created to showcase the menu of a restaurant in a visually appealing and user-friendly manner.",
+      "Chat application where you can create groups and chat with your friends.",
   },
   {
-    name: "Galpon Alarcon",
-    link: "https://galponalarcon.com",
-    image: "/projects/galpon.webp",
-    technologies: ["Javascript", "Vue", "Tailwind", "Nuxt JS"],
+    name: "Netflix Clone",
+    link: "https://nesflis.vercel.app",
+    image: "/projects/nesflis.webp",
+    technologies: ["Next JS", "React", "Tailwind", "Prisma js", "Typescript", "Next Auth", "Mongo DB", "SWR", "Zustand"],
     description:
-      "This website was created to showcase information about the Galpon family and their tradition with roosters.",
+      "Netflix clone with authentication and user profile.",
   },
   {
     name: "Bright Clean Team",
