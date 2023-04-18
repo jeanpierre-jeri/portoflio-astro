@@ -3,12 +3,14 @@ import ContactButton from "./ContactButton.astro";
 
 const pathname = new URL(Astro.request.url).pathname;
 const afterStyle =
-  "hover:after:opacity-100 after:ease-in after:duration-300 after:mt-0.5 after:opacity-0 after:block after:w-10/12 after:mx-auto after:h-1 after:rounded-full after:bg-gradient-to-r after:from-emerald-400 after:to-cyan-400";
+  "hover:after:opacity-100 after:ease-in after:duration-300 after:mt-0.5 after:opacity-0 after:block after:w-10/12 after:mx-auto after:h-[3px] after:rounded-full after:bg-gradient-to-r after:from-emerald-400 after:to-cyan-400";
 ---
 
 <header>
   <nav>
-    <ul class="flex text-base pt-10 pb-6 items-end gap-8 md:gap-20">
+    <ul
+      class="flex text-base pt-10 pb-6 items-end gap-8 md:gap-20 justify-center md:justify-end"
+    >
       <li>
         <a
           href="/"
@@ -17,7 +19,7 @@ const afterStyle =
           }`}>Home</a
         >
       </li>
-      <li class="flex-1 text-right">
+      <li>
         <a
           class={`inline-block ${afterStyle} ${
             pathname === "/projects" ? "after:opacity-100" : ""
