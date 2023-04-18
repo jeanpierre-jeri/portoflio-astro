@@ -1,17 +1,14 @@
 ---
+import Github from "./Icons/Github.astro";
+
 const { project } = Astro.props;
-const { name, image, technologies, description, link } = project;
+const { name, image, technologies, description, link, repository } = project;
 ---
 
-<a
-  href={link}
-  target="_blank"
-  rel="noopener"
-  class="hover:scale-105 transition-transform duration-300"
+<article
+  class="bg-neutral-800 rounded-md overflow-hidden hover:scale-105 transition-transform duration-300 flex flex-col"
 >
-  <article
-    class="bg-neutral-800 rounded-md overflow-hidden h-full flex flex-col"
-  >
+  <a href={link} target="_blank" rel="noopener" class="flex-grow flex flex-col">
     <picture>
       <img
         src={image}
@@ -26,7 +23,7 @@ const { name, image, technologies, description, link } = project;
         {
           technologies.map((technology) => {
             return (
-              <li class="px-4 py-2 font-normal text-xs tracking-widest uppercase text-neutral-800 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-md">
+              <li class="px-4 py-2 font-normal text-xs tracking-widest uppercase border border-emerald-400 text-white rounded-md">
                 {technology}
               </li>
             );
@@ -34,10 +31,23 @@ const { name, image, technologies, description, link } = project;
         }
       </ul>
       <p
-        class="font-normal text-base leading-normal tracking-wider text-sky-200"
+        class="font-normal text-base leading-normal tracking-wider text-sky-200 flex-grow"
       >
         {description}
       </p>
     </div>
-  </article>
-</a>
+  </a>
+  {
+    repository && (
+      <a
+        href={repository}
+        target="_blank"
+        rel="noopener"
+        class="pl-7 pb-7 w-fit tex-white flex items-center gap-2 text-base font-bold"
+      >
+        <Github />
+        Code
+      </a>
+    )
+  }
+</article>
