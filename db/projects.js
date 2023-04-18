@@ -3,9 +3,10 @@ export default [
     name: "Chat Group",
     link: "https://chat-group-beta.vercel.app",
     image: "/projects/chat-group.webp",
-    technologies: ["Next JS", "React", "Tailwind", "Supabase", "Typescript"],
+    technologies: ["Next JS", "React", "Tailwind", "Supabase", "Typescript", "Zustand"],
     description:
       "Chat application where you can create groups and chat with your friends.",
+    repository: 'https://github.com/jeanpierre-jeri/chat-group'
   },
   {
     name: "Netflix Clone",
@@ -14,6 +15,7 @@ export default [
     technologies: ["Next JS", "React", "Tailwind", "Prisma js", "Typescript", "Next Auth", "Mongo DB", "SWR", "Zustand"],
     description:
       "Netflix clone with authentication and user profile.",
+    repository: 'https://github.com/jeanpierre-jeri/netflix-clone'
   },
   {
     name: "Bright Clean Team",
@@ -22,6 +24,7 @@ export default [
     technologies: ["Typescript", "React", "Tailwind", "Next JS"],
     description:
       "This landing page was designed to highlight a professional cleaning service and its benefits.",
+    repository: ''
   },
   {
     name: "Balam Tires and Wheels",
@@ -30,6 +33,7 @@ export default [
     technologies: ["Javascript", "Vue", "Tailwind", "Nuxt JS", "i18n"],
     description:
       "This website was created for an auto repair company and is available in both English and Spanish.",
+    repository: ''
   },
   {
     name: "Pizatec",
@@ -38,6 +42,7 @@ export default [
     technologies: ["Javascript", "Vue", "Tailwind", "Nuxt JS"],
     description:
       "This website was created for a company that sells a wide range of whiteboards, from traditional chalkboards to smart boards.",
+    repository: ''
   },
   {
     name: "JP Headphones",
@@ -53,6 +58,7 @@ export default [
     ],
     description:
       "This is an ecommerce website that sells headphones and is built using Stripe and Sanity.",
+    repository: 'https://github.com/jeanpierre-jeri/next-stripe-ecommerce'
   },
   {
     name: "Pokemon",
@@ -61,5 +67,6 @@ export default [
     technologies: ["Typescript", "React", "Tailwind", "Redux"],
     description:
       "This app features a searchable list of Pokemon and uses Redux to manage its global state.",
+    repository: 'https://github.com/jeanpierre-jeri/react-redux-typescript-pokemons'
   },
 ];
