@@ -1,5 +1,14 @@
 export default [
   {
+    name: "Twitter Clone",
+    link: "https://twoetter.vercel.app",
+    image: "/projects/twitter.webp",
+    technologies: ["Typescript", "React", "Next JS", "SWR", "Zustand", "Tailwind", "Mongo DB", "Next Auth", "Prisma js"],
+    description:
+      "This website was created for a company that sells a wide range of whiteboards, from traditional chalkboards to smart boards.",
+    repository: ''
+  },
+  {
     name: "Chat Group",
     link: "https://chat-group-beta.vercel.app",
     image: "/projects/chat-group.webp",
@@ -33,15 +42,6 @@ export default [
     technologies: ["Javascript", "Vue", "Tailwind", "Nuxt JS", "i18n"],
     description:
       "This website was created for an auto repair company and is available in both English and Spanish.",
-    repository: ''
-  },
-  {
-    name: "Pizatec",
-    link: "https://pizatec.com",
-    image: "/projects/pizatec.webp",
-    technologies: ["Javascript", "Vue", "Tailwind", "Nuxt JS"],
-    description:
-      "This website was created for a company that sells a wide range of whiteboards, from traditional chalkboards to smart boards.",
     repository: ''
   },
   {
