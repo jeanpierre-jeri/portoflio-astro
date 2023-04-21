@@ -5,7 +5,7 @@ export default [
     image: "/projects/twitter.webp",
     technologies: ["Typescript", "React", "Next JS", "SWR", "Zustand", "Tailwind", "Mongo DB", "Next Auth", "Prisma js"],
     description:
-      "This website was created for a company that sells a wide range of whiteboards, from traditional chalkboards to smart boards.",
+      "Twitter clone with authentication and user profile.",
     repository: ''
   },
   {
