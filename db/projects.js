@@ -6,7 +6,7 @@ export default [
     technologies: ["Typescript", "React", "Next JS", "SWR", "Zustand", "Tailwind", "Mongo DB", "Next Auth", "Prisma js"],
     description:
       "Twitter clone with authentication and user profile.",
-    repository: ''
+    repository: 'https://github.com/jeanpierre-jeri/twitter-clone'
   },
   {
     name: "Chat Group",
