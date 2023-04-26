@@ -1,13 +1,14 @@
 import { useState } from "preact/hooks";
+import type { JSXInternal } from "preact/src/jsx";
 
 export default function Form() {
   const [error, setError] = useState("");
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: JSXInternal.TargetedEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
 
     if (!formData.get("email")) {
       setError("input required");
@@ -45,9 +46,8 @@ export default function Form() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-6">
       <p
-        className={`text-center ${
-          response.includes("error") ? "text-red-500" : "text-emerald-500"
-        }`}
+        className={`text-center ${response.includes("error") ? "text-red-500" : "text-emerald-500"
+          }`}
       >
         {response}
       </p>
@@ -69,9 +69,8 @@ export default function Form() {
           Email
         </label>
         <input
-          className={`bg-transparent border rounded-md py-4 px-5 focus:border-cyan-400 outline-none font-medium text-base ${
-            error ? "border-red-500" : ""
-          }`}
+          className={`bg-transparent border rounded-md py-4 px-5 focus:border-cyan-400 outline-none font-medium text-base ${error ? "border-red-500" : ""
+            }`}
           id="email"
           name="email"
           type="email"
