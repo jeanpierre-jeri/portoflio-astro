@@ -1,23 +1,21 @@
-import { useEffect, useState } from "preact/hooks";
+import { useState } from "preact/hooks";
 
 export default function Joke() {
-  const [joke, setJoke] = useState("");
+  const [joke, setJoke] = useState('');
 
-  useEffect(() => {
-    const getJoke = async () => {
-      const response = await fetch("https://icanhazdadjoke.com/", {
-        headers: {
-          Accept: "application/json",
-        },
-      });
+  const getJoke = async () => {
+    const response = await fetch("https://icanhazdadjoke.com/", {
+      headers: {
+        Accept: "application/json",
+      }
+    })
+    const { joke } = await response.json();
 
-      const { joke } = await response.json();
+    return joke
+  }
 
-      setJoke(joke);
-    };
+  if (joke === '') getJoke().then(setJoke);
 
-    getJoke();
-  }, []);
 
   return (
     <>
