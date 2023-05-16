@@ -1,6 +1,5 @@
 export const getJoke = async () => {
   try {
-
     const response = await fetch("https://icanhazdadjoke.com/", {
       headers: {
         Accept: "application/json",
