@@ -13,6 +13,7 @@ const afterStyle =
     >
       <li>
         <a
+          aria-label="Home"
           href="/"
           class={`text- ${afterStyle} ${
             pathname === "/" ? "after:opacity-100" : ""
@@ -21,6 +22,7 @@ const afterStyle =
       </li>
       <li>
         <a
+          aria-label="Projects"
           class={`inline-block ${afterStyle} ${
             pathname === "/projects" ? "after:opacity-100" : ""
           }`}
