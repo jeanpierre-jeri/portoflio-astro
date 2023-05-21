@@ -18,6 +18,22 @@ export default [
     repository: 'https://github.com/jeanpierre-jeri/chat-group'
   },
   {
+    name: 'Anime Quiz',
+    link: 'https://anime-quiz-pro.vercel.app',
+    image: '/projects/anime-quiz.webp',
+    technologies: ['Next JS', 'React', 'Tailwind', 'Typescript', 'Zustand'],
+    description: 'Quiz application with questions about anime.',
+    repository: 'https://github.com/jeanpierre-jeri/anime-quiz'
+  },
+  {
+    name: "Snake Game",
+    link: "https://snake-game-pro.vercel.app",
+    image: "/projects/snake-game.webp",
+    technologies: ["React", "Tailwind", "Typescript", "Zustand"],
+    description: "Snake game built with React.",
+    repository: 'https://github.com/jeanpierre-jeri/snake-game'
+  },
+  {
     name: "Netflix Clone",
     link: "https://nesflis.vercel.app",
     image: "/projects/nesflis.webp",
